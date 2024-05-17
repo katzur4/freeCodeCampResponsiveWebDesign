@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Survey Form </title>
+  <meta charset="UTF-8" />
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <h1 id="title">The International 2024 Survey Form</h1>
+  <p id="description">A survey form to for the next TI winner</p>
+  <form id="survey-form" action="" method="post">
+    <fieldset>
+      <label id="name-label" for="name">Name: 
+        <input id="name" type="text" required placeholder="Juan Dela Cruz">
+      </label>
+      <label id="email-label" for="email">Email: 
+        <input id="email" type="email"       required placeholder="juandelacruz@gmail.com">
+      </label>
+      <label id="number-label" for="number">Age: 
+        <input id="number" type="number" min="13" max="120"  placeholder="13" required>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>
+        Which team will win the TI 2024?
+        <select id="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Gaimin Gladiators</option>
+          <option value="2">Betboom</option>
+          <option value="3">Boom Esports</option>
+          <option value="4">Team Spirit</option>
+          <option value="5">Team Falcons</option>
+        <option value="6">Team Liquid</option>
+        <option value="7">G2 x IG</option>
+        <option value="8">Extreme Gaming</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset id="aegis-deny">
+      <legend>Will there be an Aegies deny in TI 2024?</legend>
+      <label for="answer-yes">
+          <input class="inline" type="radio" id="answer-yes" name="aegies-deny" checked value="yes"> Yes
+      </label>
+      <label class="inline" for="answer-no">
+      <input class="inline" type="radio" name="aegies-deny" id="answer-no" value="no"> No
+      </label>
+      <label for="answer-maybe">
+      <input class="inline" type="radio" name="aegies-deny" id="answer-maybe" value="maybe"> Maybe
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Which hero/es should have an arcana next TI?  
+      </legend>
+      <input class="inline" type="checkbox" id="meepo" checked value="Meepo">Meepo
+      <input class="inline" type="checkbox" id="gyrocopter" value="Gyrocopter">Gyrocopter
+      <input class="inline" type="checkbox" id="bane" value="Bane">Bane
+      <input class="inline" type="checkbox" id="magnus" value="Magnus">Magnus
+      <input class="inline" type="checkbox" id="viper" value="Viper">Viper
+      <input class="inline" type="checkbox" id="tuskar" value="Tuskar">Tuskar
+      <label for="why-hero"> Why do you think this hero deserves an arcana
+        <textarea id="why-hero" name="why-hero" rows="3" cols="30"placeholder="Because its good!"></textarea>
+      </label>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit"/>
+  </form>
+</body>
+
+</html>
